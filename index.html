@@ -1,22 +1,35 @@
 <!DOCTYPE html>
+ <!-- tell the browser this is a HTML5 document -->
 <html lang="en">
-<head>
+  <!-- start the HTML page and set the language to English -->
+<head>  
+  <!-- this tag to contain all the settings and information about the page -->
   <meta charset="UTF-8">
+   <!-- to support all characters and symbols in the page -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- to make the website responsive on mobile devices -->
   <title>Lakshana Priya Portfolio</title>
+  <!-- set the title that appears on the browser tab -->
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    /* to remove default spacing from all elements */
     body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
+     /* to set the font, background color and text color for the entire page */
     header { background: #2c3e50; color: white; padding: 60px 20px; text-align: center; }
+    /* to style the header with dark background, white text and center alignment" */
+
     header h1 { font-size: 2.5rem; margin-bottom: 10px; }
     header p { font-size: 1.1rem; color: #bdc3c7; }
     .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+    /* center the content and limit the page width to 800px */
     section { background: white; border-radius: 8px; padding: 24px; margin: 20px 0; }
+    /* give each section a white card look with rounded corners */
     section h2 { font-size: 1.4rem; color: #2c3e50; margin-bottom: 14px; border-left: 4px solid #2c3e50; padding-left: 10px; }
     .project-card { background: #ecf0f1; padding: 16px; border-radius: 6px; margin-top: 10px; }
     .project-card h3 { margin-bottom: 6px; color: #2c3e50; }
     .skills-list { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; }
     .skills-list li { background: #2c3e50; color: white; padding: 6px 16px; border-radius: 99px; font-size: 14px; }
+    /* to display skills as dark rounded badge buttons */
     footer { text-align: center; padding: 24px; font-size: 13px; color: #888; }
     a { color: #2c3e50; }
   </style>
@@ -27,20 +40,21 @@
     <h1>Hi, I'm Lakshana Priya 👋</h1>
     <p>Aspiring DevOps Engineer | Python Developer</p>
   </header>
-
+ <!-- display the name and role at the top of the page -->
   <div class="container">
 
     <section>
       <h2>About Me</h2>
       <p>I am a passionate developer learning DevOps tools like Docker, Git, and GitHub. I enjoy building and deploying real world applications.</p>
     </section>
-
+ <!-- give a short introduction about myselves -->
     <section>
       <h2>My Projects</h2>
       <div class="project-card">
         <h3>DevOps Portfolio App</h3>
         <p>A personal portfolio website built with Flask, containerized using Docker, and deployed via GitHub Pages.</p>
       </div>
+      <!-- display each project as a separate card -->
       <div class="project-card" style="margin-top:10px">
         <h3>Flask Web App</h3>
         <p>A simple Flask web application containerized with Docker and pushed to GitHub with CI/CD pipeline.</p>
@@ -59,18 +73,18 @@
         <li>CI/CD</li>
       </ul>
     </section>
-
+<!-- display all our technical skills as badge buttons -->
     <section>
       <h2>Contact</h2>
       <p>Email: lakshanapriyak@gmail.com</p>
       <p>GitHub: <a href="https://github.com/lakshanapriyak">github.com/kowshikaarumugam</a></p>
     </section>
-
+ <!-- display email and GitHub link for people to contact us -->
   </div>
 
   <footer>
     <p>Made by LakshanaPriya — 2025</p>
   </footer>
-
+<!-- to display the my name and year at the bottom of the page -->
 </body>
 </html>
