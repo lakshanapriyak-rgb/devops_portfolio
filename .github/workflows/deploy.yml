@@ -1,31 +1,37 @@
 name: CI/CD Pipeline
-
+# give a name to our GitHub Actions workflow
 on:
   push:
     branches:
       - main
-
+ # automatically trigger the pipeline when code is pushed to main branch
 jobs:
   build-and-test:
+  # define a job called build-and-test inside the workflow
     runs-on: ubuntu-latest
-
+# run the job on a fresh Ubuntu virtual machine
     steps:
+    # define all the steps that run inside the job
     - name: Checkout code
       uses: actions/checkout@v3
-
+ # download our repository code into the  machine
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
         python-version: '3.9'
-
+ # install Python 3.9
     - name: Install dependencies
       run: |
         pip install flask
+        
+   # install Flask library that our application needs     
     - name: Test app starts
       run: |
         timeout 5 python app.py || true
         echo "App build successful!"
+      # check if our Flask app starts without any errors
     - name: Build Docker image
       run: |
         docker build -t devops-portfolio .
         echo "Docker build successful!"
+ # build a Docker image of our application
