@@ -1,17 +1,24 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
+/* to remove default margin and padding from all elements */
 body { font-family: Arial, sans-serif; background: #f4f4f4; color: #333; }
-
+ /* the font style, background color and text color for the entire page */
 header { background: #2c3e50; color: white; padding: 40px 20px; text-align: center; }
+ /* the header a dark background, white text and center alignment */
 header h1 { font-size: 2rem; margin-bottom: 8px; }
+/* set the main heading size and add space below it */
 header p { font-size: 1rem; color: #bdc3c7; }
-
+ /* set the paragraph text size and light grey color inside the header */
 section { max-width: 800px; margin: 30px auto; padding: 20px; background: white; border-radius: 8px; }
+/* center the section, limit its width to 800px and give it a white card look */
 section h2 { font-size: 1.4rem; margin-bottom: 12px; color: #2c3e50; }
-
+/* style the section headings with dark color and space below */
 .project-card { background: #ecf0f1; padding: 16px; border-radius: 6px; margin-top: 10px; }
+ /* each project a light grey card look with rounded corners */
 .project-card h3 { margin-bottom: 6px; color: #2c3e50; }
-
+/* style the project title with dark color and space below */
 ul { padding-left: 20px; }
+ /* add left space so the list bullets are properly visible */
 ul li { margin-bottom: 6px; }
-
+/* add space between each list item */
 footer { text-align: center; padding: 20px; font-size: 13px; color: #888; }
+ /* to center the footer text and set it to small grey color */
